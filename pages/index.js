@@ -95,7 +95,19 @@ export default function Home() {
             <p className="w-full mt-2 text-lg opacity-50 tablet:m-10 laptop:text-3xl laptop:w-3/5">
               {data.aboutpara}
             </p>
+            {"  "}
+            <a
+              href="https://rb.gy/saumwb"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block p-1 px-4 py-2 m-1 mt-1 text-sm transition-all duration-300 ease-out rounded-lg text-slate-500 tablet:text-base laptop:p-2 laptop:m-2 hover:bg-slate-100 hover:scale-105 active:scale-100 tablet:first:ml-0"
+            >
+              Resume
+            </a>
           </div>
+          {/* /Check Click Stats
+          https://app.rebrandly.com/public/links/share?href=rb.gy/{code}/ */}
+
           <Socials className="mt-2 laptop:mt-5" />
         </div>
         <div className="p-2 mt-10 laptop:mt-30 laptop:p-0" ref={workRef}>
