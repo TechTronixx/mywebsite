@@ -49,10 +49,10 @@
     },
     {
       "id": "5",
-      "title": "PrntHub - A Token & NFT launching Website",
-      "description": "NextJS | Tailwind | DaisyUI | Vite ",
-      "imageSrc": "https://imgur.com/D7V2785.jpg",
-      "url": "https://prnthub.vercel.app/"
+      "title": "PrntHub - A Token & NFT launchpad",
+      "description": "Framer Motion | Tailwind | DaisyUI | Vite | Material UI",
+      "imageSrc": "https://imgur.com/0uCdSOr.jpg",
+      "url": "https://prnthub-test.vercel.app/"
     },
     {
       "id": "6",
