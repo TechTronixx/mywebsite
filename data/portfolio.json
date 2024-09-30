@@ -3,8 +3,8 @@
   "headerTaglineOne": "Hello 👋",
   "headerTaglineTwo": "I am Awais",
   "headerTaglineThree": "Front-end dev",
-  "headerTaglineFour": " based in Dubai, UAE.",
-  "showCursor": false,
+  "headerTaglineFour": "based in Dubai, UAE.",
+  "showCursor": true,
   "showBlog": false,
   "darkMode": true,
   "showResume": false,
@@ -22,7 +22,7 @@
     {
       "id": "1",
       "title": "Solana NFT Launchpad ",
-      "description": "NextJS | ChadCN | Tailwind ",
+      "description": "NextJS | Shadcnui | Tailwind ",
       "imageSrc": "https://imgur.com/dxe3Vx5.jpg",
       "url": "https://sol-launchpad.vercel.app/"
     },
