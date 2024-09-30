@@ -28,10 +28,10 @@
     },
     {
       "id": "2",
-      "title": "Work Wise | Job Portal",
-      "description": "HTML | CSS | JS ",
-      "imageSrc": "https://imgur.com/uriAl5i.jpg",
-      "url": "https://workwisejobs.vercel.app/"
+      "title": "Apple 3D landing page concept",
+      "description": "Apple Landing Page Concept with react three fiber",
+      "imageSrc": "https://imgur.com/ehDGFzf.jpg",
+      "url": "https://papple3d.vercel.app/"
     },
     {
       "id": "3",
@@ -52,14 +52,14 @@
       "title": "PrntHub - A Token & NFT launching Website",
       "description": "NextJS | Tailwind | DaisyUI | Vite ",
       "imageSrc": "https://imgur.com/D7V2785.jpg",
-      "url": "https://prnthub-test.vercel.app/"
+      "url": "https://prnthub.vercel.app/"
     },
     {
       "id": "6",
-      "title": "Basketball Scoreboard",
-      "description": "HTML | CSS | JS ",
-      "imageSrc": "https://imgur.com/kIvd6y5.jpg",
-      "url": "https://basketball-scorecard.vercel.app/"
+      "title": "Felix Memecoin Website",
+      "description": "Vite | React | Tailwind | Framer Motion",
+      "imageSrc": "https://imgur.com/azjEVVQ.jpg",
+      "url": "https://felix-test.vercel.app/"
     },
     {
       "id": "7",
@@ -88,13 +88,27 @@
       "description": "HTML | CSS | Vite | GSAP | OrbitControls",
       "imageSrc": "https://imgur.com/h7MaaMx.jpg",
       "url": "https://3dball.vercel.app/"
+    },
+    {
+      "id": "11",
+      "title": "Work Wise | Job Portal",
+      "description": "HTML | CSS | JS ",
+      "imageSrc": "https://imgur.com/uriAl5i.jpg",
+      "url": "https://workwisejobs.vercel.app/"
+    },
+    {
+      "id": "12",
+      "title": "Basketball Scoreboard",
+      "description": "HTML | CSS | JS ",
+      "imageSrc": "https://imgur.com/kIvd6y5.jpg",
+      "url": "https://basketball-scorecard.vercel.app/"
     }
   ],
   "services": [
     {
       "id": "1",
       "title": "Web Development",
-      "description": "I help with web development, ensuring websites function correctly and look great. This involves coding, troubleshooting, and optimizing websites for performance. I have expertise in web technologies and can help with various aspects of web development, from front-end functionality."
+      "description": "I help with web development, ensuring websites function correctly and look great. This involves coding, troubleshooting, and optimizing websites for performance. I have expertise in web technologies and can help with various aspects of web development, with a focus on front-end functionality."
     },
     {
       "id": "2",
@@ -103,13 +117,13 @@
     },
     {
       "id": "3",
-      "title": "Web3 Design",
-      "description": "I help build web3 design for NFT Mint page's in terms of Design the Front-end Component's on the Solana Blockchain."
+      "title": "Web 3.0 Design",
+      "description": "I design front-end components for Web 3.0 projects, especially NFT/Token Launchpad Component's UI/UX for the Solana blockchain."
     },
     {
       "id": "4",
       "title": "IT Specialist",
-      "description": "I help with IT support, ensuring that all systems are functioning correctly and that any issues are resolved quickly. I have expertise in IT systems and can help with various aspects of IT support, from troubleshooting to system maintenance. In Windows & android platforms."
+      "description": "I help with IT support, ensuring that all systems are functioning correctly and that any issues are resolved quickly. I have expertise in IT systems and can help with various aspects of IT support, from troubleshooting to system maintenance in Windows & android platforms."
     }
   ],
   "aboutpara": "Hi there! I'm a passionate Software Developer with a knack for solving technical problems and creating innovative solutions. I thrive on challenges and enjoy revamping outdated systems while writing clean, efficient code. With strong customer service skills and a commitment to staying updated on industry trends, I bring a valuable asset to any team. Though I'm relatively new, I've worked on various Crypto projects and constantly seek opportunities to learn and grow. Let's connect and create something amazing together!",
