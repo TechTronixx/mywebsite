@@ -97,7 +97,7 @@ export default function Home() {
             </p>
             {"  "}
             <a
-              href="https://rb.gy/saumwb"
+              href="https://shorturl.at/K6Vj6"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block p-1 px-4 py-2 m-1 mt-1 text-sm transition-all duration-300 ease-out rounded-lg text-slate-500 tablet:text-base laptop:p-2 laptop:m-2 hover:bg-slate-100 hover:scale-105 active:scale-100 tablet:first:ml-0"
