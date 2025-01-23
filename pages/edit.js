@@ -46,7 +46,8 @@ const Edit = () => {
           description: "Web Design & Development",
           imageSrc:
             "https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAyfHxwYXN0ZWx8ZW58MHx8MHw%3D&auto=format&fit=crop&w=400&q=60",
-
+          videoSrc: "",
+          isVideo: false,
           url: "http://chetanverma.com/",
         },
       ],
@@ -54,9 +55,8 @@ const Edit = () => {
   };
 
   const deleteProject = (id) => {
-    const copyProjects = data.projects;
-    copyProjects = copyProjects.filter((project) => project.id !== id);
-    setData({ ...data, projects: copyProjects });
+    let filteredProjects = data.projects.filter((project) => project.id !== id);
+    setData({ ...data, projects: filteredProjects });
   };
 
   // Services Handler
@@ -83,9 +83,8 @@ const Edit = () => {
   };
 
   const deleteService = (id) => {
-    const copyServices = data.services;
-    copyServices = copyServices.filter((service) => service.id !== id);
-    setData({ ...data, services: copyServices });
+    let filteredServices = data.services.filter((service) => service.id !== id);
+    setData({ ...data, services: filteredServices });
   };
 
   // Socials Handler
@@ -111,9 +110,8 @@ const Edit = () => {
   };
 
   const deleteSocials = (id) => {
-    const copySocials = data.socials;
-    copySocials = copySocials.filter((social) => social.id !== id);
-    setData({ ...data, socials: copySocials });
+    let filteredSocials = data.socials.filter((social) => social.id !== id);
+    setData({ ...data, socials: filteredSocials });
   };
 
   // Resume
@@ -358,6 +356,25 @@ const Edit = () => {
                     </Button>
                   </div>
 
+                  <div className="mt-5 w-full max-h-[200px] overflow-hidden rounded-lg">
+                    {project.isVideo ? (
+                      <video
+                        src={project.videoSrc}
+                        controls
+                        className="object-cover w-full h-full"
+                      >
+                        <source src={project.videoSrc} type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                    ) : (
+                      <img
+                        src={project.imageSrc}
+                        alt={project.title}
+                        className="object-cover w-full h-full"
+                      />
+                    )}
+                  </div>
+
                   <div className="flex items-center mt-5">
                     <label className="w-1/5 text-lg opacity-50">Title</label>
                     <input
@@ -370,8 +387,9 @@ const Edit = () => {
                       }
                       className="w-4/5 p-2 ml-10 border-2 rounded-md shadow-lg"
                       type="text"
-                    ></input>
+                    />
                   </div>
+
                   <div className="flex items-center mt-2">
                     <label className="w-1/5 text-lg opacity-50">
                       Description
@@ -386,24 +404,73 @@ const Edit = () => {
                       }
                       className="w-4/5 p-2 ml-10 border-2 rounded-md shadow-lg"
                       type="text"
-                    ></input>
+                    />
                   </div>
+
                   <div className="flex items-center mt-2">
                     <label className="w-1/5 text-lg opacity-50">
-                      Image Source
+                      Media Type
                     </label>
-                    <input
-                      value={project.imageSrc}
-                      onChange={(e) =>
-                        editProjects(index, {
-                          ...project,
-                          imageSrc: e.target.value,
-                        })
-                      }
-                      className="w-4/5 p-2 ml-10 border-2 rounded-md shadow-lg"
-                      type="text"
-                    ></input>
+                    <div className="flex items-center w-4/5 ml-10">
+                      <Button
+                        onClick={() =>
+                          editProjects(index, { ...project, isVideo: false })
+                        }
+                        type={!project.isVideo ? "primary" : undefined}
+                      >
+                        Image
+                      </Button>
+                      <Button
+                        onClick={() =>
+                          editProjects(index, { ...project, isVideo: true })
+                        }
+                        type={project.isVideo ? "primary" : undefined}
+                      >
+                        Video
+                      </Button>
+                    </div>
                   </div>
+
+                  {project.isVideo ? (
+                    <div className="flex items-center mt-2">
+                      <label className="w-1/5 text-lg opacity-50">
+                        Video Source
+                      </label>
+                      <input
+                        value={project.videoSrc || ""}
+                        onChange={(e) =>
+                          editProjects(index, {
+                            ...project,
+                            videoSrc: e.target.value,
+                            imageSrc: "",
+                          })
+                        }
+                        placeholder="Enter video URL (YouTube, Vimeo, or direct link)"
+                        className="w-4/5 p-2 ml-10 border-2 rounded-md shadow-lg"
+                        type="text"
+                      />
+                    </div>
+                  ) : (
+                    <div className="flex items-center mt-2">
+                      <label className="w-1/5 text-lg opacity-50">
+                        Image Source
+                      </label>
+                      <input
+                        value={project.imageSrc || ""}
+                        onChange={(e) =>
+                          editProjects(index, {
+                            ...project,
+                            imageSrc: e.target.value,
+                            videoSrc: "",
+                          })
+                        }
+                        placeholder="Enter image URL"
+                        className="w-4/5 p-2 ml-10 border-2 rounded-md shadow-lg"
+                        type="text"
+                      />
+                    </div>
+                  )}
+
                   <div className="flex items-center mt-2">
                     <label className="w-1/5 text-lg opacity-50">url</label>
                     <input
