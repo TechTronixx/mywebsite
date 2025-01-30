@@ -2,7 +2,7 @@
   "name": "Awais",
   "headerTaglineOne": "Hello 👋",
   "headerTaglineTwo": "I am Awais",
-  "headerTaglineThree": "Software Developer",
+  "headerTaglineThree": "Aspiring Software Developer",
   "headerTaglineFour": "",
   "showCursor": true,
   "showBlog": false,
@@ -16,7 +16,8 @@
       "link": "https://in.linkedin.com/in/moahmmedawais"
     },
     { "id": "3", "title": "Twitter", "link": "https://twitter.com/Awais_209" },
-    { "id": "5", "title": "Email", "link": "mailto:foxstot@gmail.com" }
+    { "id": "5", "title": "Email", "link": "mailto:awais209@gmail.com" },
+    { "id": "6", "title": "Medium", "link": "https://medium.com/@foxstot" }
   ],
   "projects": [
     {
@@ -38,7 +39,7 @@
       "title": "Password Generator",
       "description": "HTML | CSS | JS ",
       "imageSrc": "https://imgur.com/BNeKlqO.jpg",
-      "url": "http://chetanverma.com/"
+      "url": "https://password-generatorx.vercel.app/"
     },
     {
       "id": "4",
