@@ -92,7 +92,7 @@ export default function Home() {
           </div>
           <div className="p-2 mt-10 laptop:mt-40 laptop:p-0" ref={aboutRef}>
             <h1 className="text-2xl tablet:m-10 text-bold">About.</h1>
-            <p className="w-full mt-2 text-lg opacity-50 tablet:m-10 laptop:text-3xl laptop:w-3/5">
+            <p className="w-full mt-2 text-lg whitespace-pre-line opacity-50 tablet:m-10 laptop:text-3xl laptop:w-3/5">
               {data.aboutpara}
             </p>
             {"  "}
