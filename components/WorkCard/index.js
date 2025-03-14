@@ -1,4 +1,8 @@
+import React, { useState } from "react";
+
 const WorkCard = ({ img, name, description, onClick, isVideo, videoSrc }) => {
+  const [isLoading, setIsLoading] = useState(true);
+
   return (
     <div
       className="flex flex-col items-center p-2 overflow-hidden rounded-lg laptop:p-4 first:ml-0 link"
@@ -14,9 +18,7 @@ const WorkCard = ({ img, name, description, onClick, isVideo, videoSrc }) => {
             playsInline
           >
             <source src={videoSrc} type="video/mp4" />
-            <source src={videoSrc} type="video/webm" />
-            <source src={videoSrc} type="video/ogg" />
-            Your browser does not support the video tag.
+            <p>Your browser doesn&apos;t support HTML5 video playback.</p>
           </video>
         ) : (
           <img
