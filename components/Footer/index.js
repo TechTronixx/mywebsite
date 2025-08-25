@@ -2,6 +2,7 @@ import React from "react";
 import Socials from "../Socials";
 import Link from "next/link";
 import Button from "../Button";
+import VisitorCounter from "../VisitorCounter";
 
 const Footer = ({}) => {
   return (
@@ -25,6 +26,9 @@ const Footer = ({}) => {
             <div className="mt-10">
               <Socials />
             </div>
+
+            {/* visitor counter */}
+            <VisitorCounter />
           </div>
         </div>
       </div>

@@ -10,6 +10,7 @@ import Head from "next/head";
 import Button from "../components/Button";
 import Link from "next/link";
 import Cursor from "../components/Cursor";
+import VisitorCounter from "../components/VisitorCounter";
 
 // Local Data
 import data from "../data/portfolio.json";
@@ -105,6 +106,7 @@ export default function Home() {
               Resume
             </a>
           </div>
+
           {/* /Check Click Stats
           https://app.rebrandly.com/public/links/share?href=rb.gy/{code}/ */}
 
