@@ -8,6 +8,8 @@ import Header from "../../components/Header";
 import data from "../../data/portfolio.json";
 import { ISOToDate, useIsomorphicLayoutEffect } from "../../utils";
 import { getAllPosts } from "../../utils/api";
+import AnnouncementBanner from "../../components/AnnouncementBanner";
+
 const Blog = ({ posts }) => {
   const showBlog = useRef(data.showBlog);
   const text = useRef();
@@ -18,7 +20,7 @@ const Blog = ({ posts }) => {
     stagger(
       [text.current],
       { y: 40, x: -10, transform: "scale(0.95) skew(10deg)" },
-      { y: 0, x: 0, transform: "scale(1)" }
+      { y: 0, x: 0, transform: "scale(1)" },
     );
     if (showBlog.current) stagger([text.current], { y: 30 }, { y: 0 });
     else router.push("/");
@@ -64,6 +66,11 @@ const Blog = ({ posts }) => {
     showBlog.current && (
       <>
         {data.showCursor && <Cursor />}
+        <AnnouncementBanner
+          message="Check out the new portfolio in development!"
+          linkText="Visit Now"
+          linkUrl="https://aws-portfoliov2.vercel.app/"
+        />
         <Head>
           <title>Blog</title>
         </Head>

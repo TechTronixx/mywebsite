@@ -11,6 +11,7 @@ import BlogEditor from "../../components/BlogEditor";
 import { useRouter } from "next/router";
 import Cursor from "../../components/Cursor";
 import data from "../../data/portfolio.json";
+import AnnouncementBanner from "../../components/AnnouncementBanner";
 
 const BlogPost = ({ post }) => {
   const [showEditor, setShowEditor] = useState(false);
@@ -29,6 +30,11 @@ const BlogPost = ({ post }) => {
         <meta name="description" content={post.preview} />
       </Head>
       {data.showCursor && <Cursor />}
+      <AnnouncementBanner
+        message="Check out the new portfolio in development!"
+        linkText="Visit Now"
+        linkUrl="https://aws-portfoliov2.vercel.app/"
+      />
 
       <div
         className={`container mx-auto mt-10 ${

@@ -10,6 +10,7 @@ import { useTheme } from "next-themes";
 import { name, showResume } from "../data/portfolio.json";
 import { resume } from "../data/portfolio.json";
 import data from "../data/portfolio.json";
+import AnnouncementBanner from "../components/AnnouncementBanner";
 
 const Resume = () => {
   const router = useRouter();
@@ -32,6 +33,11 @@ const Resume = () => {
         </div>
       )} */}
       {data.showCursor && <Cursor />}
+      <AnnouncementBanner
+        message="Check out the new portfolio in development!"
+        linkText="Visit Now"
+        linkUrl="https://aws-portfoliov2.vercel.app/"
+      />
       <div
         className={`container mx-auto mb-10 ${
           data.showCursor && "cursor-none"
@@ -65,7 +71,7 @@ const Resume = () => {
                       position={position}
                       bullets={bullets}
                     ></ProjectResume>
-                  )
+                  ),
                 )}
               </div>
               <div className="mt-5">

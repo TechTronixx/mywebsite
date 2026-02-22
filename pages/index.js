@@ -14,6 +14,7 @@ import VisitorCounter from "../components/VisitorCounter";
 
 // Local Data
 import data from "../data/portfolio.json";
+import AnnouncementBanner from "../components/AnnouncementBanner";
 
 export default function Home() {
   // Ref
@@ -45,18 +46,22 @@ export default function Home() {
     stagger(
       [textOne.current, textTwo.current, textThree.current, textFour.current],
       { y: 40, x: -10, transform: "scale(0.95) skew(10deg)" },
-      { y: 0, x: 0, transform: "scale(1)" }
+      { y: 0, x: 0, transform: "scale(1)" },
     );
   }, []);
 
   return (
     <div className={`relative ${data.showCursor && "cursor-none"}`}>
+      <AnnouncementBanner
+        message="Check out the new portfolio in development!"
+        linkText="Visit Now"
+        linkUrl="https://aws-portfoliov2.vercel.app/"
+      />
       {data.showCursor && <Cursor />}
       <Head>
         <title>{data.name}</title>
       </Head>
 
-      <div className="gradient-circle"></div>
       <div className="gradient-circle-bottom"></div>
 
       <div className="container mx-auto mb-10">
